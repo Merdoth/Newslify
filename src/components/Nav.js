@@ -12,7 +12,7 @@ export default function Nav({ countries, toggle, activeCountry, onChange, query 
           <li
             key={country.code}
             onClick={() => toggle(country)}
-            className={activeCountry.code == country.code ? "active" : ""}
+            className={activeCountry.code === country.code ? "active" : ""}
           >
             {country.emoji}
           </li>

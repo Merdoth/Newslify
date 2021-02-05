@@ -18,10 +18,6 @@ function App() {
 
 	useEffect(() => {
 		fetchNews();
-	}, []);
-
-	useEffect(() => {
-		fetchNews();
 	}, [activeCountry, query]);
 
 	const fetchNews = async () => {
